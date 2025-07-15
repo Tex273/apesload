@@ -1,1 +1,101 @@
-<img src="https://www.dropbox.com/scl/fi/s6nohv3k9vcyfxbjtdg22/Were_Gonna_Kill_you_Dude.png?rlkey=vsb8t08ijvo7fcnaz7bq3dbjx&st=ykmj4uo9&dl=1" style="width: 100%;max-height: 100%;position: absolute;top: 0px;left: 0px;"/>
+
+@font-face {
+    font-family: "Beech";
+    src: url("https://db.onlinewebfonts.com/t/77ad444ba527da5e40f0f67a3cf6c5fc.eot");
+    src: url("https://db.onlinewebfonts.com/t/77ad444ba527da5e40f0f67a3cf6c5fc.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/77ad444ba527da5e40f0f67a3cf6c5fc.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/77ad444ba527da5e40f0f67a3cf6c5fc.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/77ad444ba527da5e40f0f67a3cf6c5fc.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/77ad444ba527da5e40f0f67a3cf6c5fc.svg#Beech")format("svg");
+}
+
+ <div class="container">
+  <img src="https://www.dropbox.com/scl/fi/s6nohv3k9vcyfxbjtdg22/Were_Gonna_Kill_you_Dude.png?rlkey=vsb8t08ijvo7fcnaz7bq3dbjx&st=ykmj4uo9&dl=1" style="width: 100%;max-height: 100%;position: absolute;top: 0px;left: 0px;"/>
+
+  <h1 class="top" id="top">Remember where to enter<p>
+  <h1 class="bottom" id="bottom">fart<p>
+
+
+</div> 
+  
+ <script>
+
+var texts = [
+  "REMEMBER WHERE TO ENTER",
+  "AT LORDS CONVERGING",
+  "WE HAVE WAITED FOR THIS MOMENT.",
+  "THERE IS NO ESCAPE.",
+  "INFECTED ROT PLAGUES YOUR LAND.",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+
+
+];
+var texts2 = [
+  "THE DOOR TO ENTER IS AMBER.",
+  "IN THEIR PLACE",
+  "WE KNOW YOUR FATE",
+  "THIS IS THE END FOR YOU.",
+  "THIS IS THE END FOR YOU.",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+  "IT'S A TERRIBLE NIGHT",
+];
+var r =  Math.floor(Math.random()*texts.length)
+document.getElementById("top").innerHTML = texts[r];
+document.getElementById("bottom").innerHTML = texts2[r];
+
+</script>
+  <style>
+    h1 { 
+	color:red;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+  position: absolute;
+font-family:Beech;
+font-size:50;
+    }
+ .top { 
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ .bottom { 
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+body { font-family: sans-serif; }
+
+div {
+  text-align: center;
+}
+
+img {
+  animation: zoom-in-zoom-out 10s linear;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+transform: rotate(-60deg);
+transform:translate(-9%, 31%); 
+    scale: 500%;
+  }
+  100% {
+transform:translate(0, 0); 
+transform: rotate(0deg);
+    scale: 100%;
+  }
+
+
+    </style>
