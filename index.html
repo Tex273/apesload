@@ -9,8 +9,14 @@
     url("https://db.onlinewebfonts.com/t/77ad444ba527da5e40f0f67a3cf6c5fc.svg#Beech")format("svg");
 }
 
+ <audio  id="vid" controls autoplay>
+  <source src="" type="audio/flac">
+</audio> 
+
+
+
  <div class="container">
-  <img src="https://www.dropbox.com/scl/fi/s6nohv3k9vcyfxbjtdg22/Were_Gonna_Kill_you_Dude.png?rlkey=vsb8t08ijvo7fcnaz7bq3dbjx&st=ykmj4uo9&dl=1" style="width: 100%;max-height: 100%;position: absolute;top: 0px;left: 0px;"/>
+  <img src="https://www.dropbox.com/scl/fi/s6nohv3k9vcyfxbjtdg22/Were_Gonna_Kill_you_Dude.png?rlkey=vsb8t08ijvo7fcnaz7bq3dbjx&st=ykmj4uo9&dl=1" style="width: 150%;max-height: 150%;position: absolute;top: 0px;left: 0px;"/>
 
   <h1 class="top" id="top">Remember where to enter<p>
   <h1 class="bottom" id="bottom">fart<p>
@@ -27,10 +33,10 @@ var texts = [
   "THERE IS NO ESCAPE.",
   "INFECTED ROT PLAGUES YOUR LAND.",
   "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
+  "SPORE CREEPY AND",
+  "ANGRY",
+  "ASTRO WAR",
+  "6",
 
 
 ];
@@ -40,17 +46,30 @@ var texts2 = [
   "WE KNOW YOUR FATE",
   "THIS IS THE END FOR YOU.",
   "THIS IS THE END FOR YOU.",
-  "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
-  "IT'S A TERRIBLE NIGHT",
+  "TO HAVE A CURSE",
+  "CUTE PART PACK",
+  "MOON",
+  "INVADERS FROM SPACE",
+  "",
 ];
 var r =  Math.floor(Math.random()*texts.length)
 document.getElementById("top").innerHTML = texts[r];
 document.getElementById("bottom").innerHTML = texts2[r];
 
+
+var audios = [
+ "https://www.dropbox.com/scl/fi/ytfbxjxksqb49jdcbh7l7/ashawanga-soul-cleanser.flac?rlkey=s686xvwkk2tfho7rjerj09yua&st=zvbhfx4u&dl=1",
+"https://www.dropbox.com/scl/fi/49no11uuyc5271xwsp1f2/Ancient-Avarice.flac?rlkey=osdqymvynuq8zzi42l1ubomgj&st=nmi048er&dl=1",
+];
+       var audio = document.getElementById("vid");
+       audio.src = audios[Math.floor(Math.random()*audios.length)]
+       audio.volume = 0.1;
+       audio.autoplay = true;
+       audio.load();
 </script>
+
+
+
   <style>
     h1 { 
 	color:red;
@@ -82,20 +101,27 @@ div {
 }
 
 img {
-  animation: zoom-in-zoom-out 10s linear;
+  animation: zoom-in-zoom-out 50s ease infinite;
 }
 
 @keyframes zoom-in-zoom-out {
   0% {
-transform: rotate(-60deg);
-transform:translate(-9%, 31%); 
-    scale: 500%;
+transform:translate(-25%, 0%); 
+  }
+  20% {
+transform:translate(0%, 0%); 
+  }
+  40% {
+transform:translate(0%, -32%); 
+  }
+  60% {
+transform:translate(-32%, -32%); 
+  }
+  80% {
+transform:translate(-32%, 0%); 
   }
   100% {
-transform:translate(0, 0); 
-transform: rotate(0deg);
-    scale: 100%;
+transform:translate(-25%, 0%); 
   }
-
 
     </style>
