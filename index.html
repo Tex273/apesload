@@ -16,21 +16,53 @@
 
 
  <div class="container">
-  <img src="https://www.dropbox.com/scl/fi/qftz3rok66s4gzueqcsu8/Vcskeleart.jpg?rlkey=l1eesa93iglsc8lxke8r33gue&st=gj3p03z9&dl=1" style="width: 110%;position: absolute;top: 0px;left: 0px;"/>
+  <img src="https://www.dropbox.com/scl/fi/s6nohv3k9vcyfxbjtdg22/Were_Gonna_Kill_you_Dude.png?rlkey=vsb8t08ijvo7fcnaz7bq3dbjx&st=ykmj4uo9&dl=1" style="width: 150%;position: absolute;top: 0px;left: 0px;"/>
 
-  <h1 class="top" id="top">SKELETON<p>
-  <h1 class="bottom" id="bottom">WAR<p>
+  <h1 class="top" id="top">Remember where to enter<p>
+  <h1 class="bottom" id="bottom">fart<p>
 
 
 </div> 
   
  <script>
 
+var texts = [
+  "REMEMBER WHERE TO ENTER",
+  "AT LORDS CONVERGING",
+  "WE HAVE WAITED FOR THIS MOMENT.",
+  "THERE IS NO ESCAPE.",
+  "INFECTED ROT PLAGUES YOUR LAND.",
+  "IT'S A TERRIBLE NIGHT",
+  "SPORE CREEPY AND",
+  "ANGRY",
+  "ASTRO WAR",
+  "6",
 
 
+];
+var texts2 = [
+  "THE DOOR TO ENTER IS AMBER.",
+  "IN THEIR PLACE",
+  "WE KNOW YOUR FATE",
+  "THIS IS THE END FOR YOU.",
+  "THIS IS THE END FOR YOU.",
+  "TO HAVE A CURSE",
+  "CUTE PART PACK",
+  "MOON",
+  "INVADERS FROM SPACE",
+  "",
+];
+var r =  Math.floor(Math.random()*texts.length)
+document.getElementById("top").innerHTML = texts[r];
+document.getElementById("bottom").innerHTML = texts2[r];
 
+
+var audios = [
+ "https://www.dropbox.com/scl/fi/ytfbxjxksqb49jdcbh7l7/ashawanga-soul-cleanser.flac?rlkey=s686xvwkk2tfho7rjerj09yua&st=zvbhfx4u&dl=1",
+"https://www.dropbox.com/scl/fi/49no11uuyc5271xwsp1f2/Ancient-Avarice.flac?rlkey=osdqymvynuq8zzi42l1ubomgj&st=nmi048er&dl=1",
+];
        var audio = document.getElementById("vid");
-       audio.src = "https://www.dropbox.com/scl/fi/x0wlbdldv2pqrpi0zghhu/Gravelord-Nito-Dark-Souls-Soundtrack-21.mp3?rlkey=hj4q9efxabhe8rconsgmpweah&st=q3khnu3z&dl=1"
+       audio.src = audios[Math.floor(Math.random()*audios.length)]
        audio.volume = 0.1;
        audio.autoplay = true;
        audio.load();
@@ -69,18 +101,27 @@ div {
 }
 
 img {
-  animation: zoom-in-zoom-out 35s ease infinite;
+  animation: zoom-in-zoom-out 50s ease infinite;
 }
 
 @keyframes zoom-in-zoom-out {
   0% {
-transform:translate(-10%, -15%); 
+transform:translate(-25%, 0%); 
   }
-  50% {
-transform:translate(0%, -15%); 
+  20% {
+transform:translate(0%, 0%); 
+  }
+  40% {
+transform:translate(0%, -40%); 
+  }
+  60% {
+transform:translate(-32%, -40%); 
+  }
+  80% {
+transform:translate(-32%, 0%); 
   }
   100% {
-transform:translate(-10%, -15%); 
+transform:translate(-25%, 0%); 
   }
 
     </style>
